@@ -4,58 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravtec AS - Maskinutleie Haugalandet</title>
-    <meta name="description" content="Maskinutleie Kobelco SK75SR-7 på Haugalandet. Med eller uten fører. Kontakt for tilbud.">
+    <meta name="description" content="Utleie av Kobelco SK75SR-7 på Haugalandet. Profesjonell maskinutleie med sertifisert fører.">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
-        header { background: #003366; color: white; padding: 40px; text-align: center; }
-        .logo { max-width: 600px; height: auto; margin: 20px 0; }
-        section { padding: 40px; max-width: 1000px; margin: auto; }
-        img.maskin { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
-        form { background: #f8f8f8; padding: 30px; border-radius: 8px; max-width: 500px; margin: 40px auto; }
-        input, textarea, button { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-        button { background: #003366; color: white; border: none; cursor: pointer; font-size: 1.1em; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        header { background: #003366; color: white; padding: 25px 20px; text-align: center; }
+        .logo { max-width: 100%; height: auto; max-height: 120px; margin-bottom: 15px; }
+        h1 { margin: 0; font-size: 1.8em; }
+        section { padding: 40px 20px; max-width: 900px; margin: auto; }
+        h2 { color: #003366; margin-top: 0; font-size: 1.6em; }
+        .maskin { max-width: 100%; height: auto; border-radius: 10px; margin: 25px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        form { background: #f8f9fa; padding: 25px; border-radius: 12px; max-width: 480px; margin: 30px auto; }
+        input, textarea { width: 100%; padding: 14px; margin: 8px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1em; }
+        button { background: #003366; color: white; border: none; padding: 16px; width: 100%; font-size: 1.1em; border-radius: 8px; cursor: pointer; margin-top: 10px; }
+        button:hover { background: #002244; }
+        .utstyr { columns: 2; max-width: 480px; margin: 20px 0; }
+        footer { background: #003366; color: white; text-align: center; padding: 30px 20px; font-size: 0.95em; }
+        
+        @media (max-width: 600px) {
+            header { padding: 20px 15px; }
+            .logo { max-height: 90px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.4em; }
+            section { padding: 30px 15px; }
+            .utstyr { columns: 1; }
+            form { padding: 20px; }
+        }
     </style>
 </head>
 <body>
+
     <header>
         <img src="images/gravtec testlogo.png" alt="Gravtec AS logo" class="logo">
-        <p>Maskinutleie på Haugalandet</p>
+        <h1>Maskinutleie på Haugalandet</h1>
     </header>
 
-    <section>
+    <section style="text-align: center;">
         <h2>Utleie av Kobelco SK75SR-7</h2>
-        <p>Kraftig og velutstyrt 8-tonner - 2025-modell.</p>
-        <p>Sertifisert VA-rørlegger som fører. Tilgjengelig med eller uten fører.</p>
-        <p>Utstyr:</p>
-        <ul>
-            <li>Engcon rototilt</li>
-            <li>Pusseskuffe</li>
-            <li>Graveskuffe</li>
-            <li>Kabelskuffe</li>
-            <li>Sorteringsklype</li>
-            <li>Meisel/hammer</li>
-        </ul>
-        <p>Pris eksempel: 1500 kr/dag eks. mva. (juster etter dine kalkyler)</p>
-        <p>Område: Haugesund, Karmøy, Tysvær + omegn</p>
+        <p style="font-size: 1.15em; max-width: 650px; margin: 15px auto 25px;">
+            Kraftig og velutstyrt 8-tonner – 2025-modell.<br>
+            Sertifisert VA-rørlegger som fører. Med eller uten fører.
+        </p>
         <img src="images/kobelco-bilde.png" alt="Kobelco SK75SR-7" class="maskin">
     </section>
 
     <section>
+        <h2>Utstyr som følger med</h2>
+        <div class="utstyr">
+            <ul>
+                <li>Engcon rototilt</li>
+                <li>Pusseskuffe</li>
+                <li>Graveskuffe</li>
+                <li>Kabelskuffe</li>
+                <li>Sorteringsklype</li>
+                <li>Meisel / hammer</li>
+            </ul>
+        </div>
+        <p><strong>Pris:</strong> Fra 1500 kr/dag eks. mva. (ta kontakt for tilbud)</p>
+    </section>
+
+    <section>
         <h2>Kontaktskjema</h2>
-        <p>Fyll inn for tilbud og ledige datoer.</p>
+        <p style="text-align: center; max-width: 400px; margin: 0 auto 20px;">Fyll inn for tilbud og ledige datoer. Vi svarer raskt.</p>
+        
         <form action="mailto:post@gravtec.no" method="post" enctype="text/plain">
-            <input type="text" name="navn" placeholder="Navn/firma" required>
+            <input type="text" name="navn" placeholder="Navn / Firma" required>
             <input type="tel" name="telefon" placeholder="Telefon" required>
-            <input type="text" name="periode" placeholder="Ønsket periode/dato">
-            <textarea name="melding" placeholder="Beskriv jobben" rows="5" required></textarea>
+            <input type="text" name="periode" placeholder="Ønsket periode / dato">
+            <textarea name="melding" placeholder="Beskriv jobben kort" rows="5" required></textarea>
             <button type="submit">Send forespørsel</button>
         </form>
-        <p>post@gravtec.no • Telefon: 95284025 • Avaldsnes</p>
     </section>
 
     <footer>
-        <p>© Gravtec AS 2025</p>
+        <p><strong>post@gravtec.no</strong> &nbsp;|&nbsp; <strong>952 84 025</strong> &nbsp;|&nbsp; Avaldsnes</p>
+        <p style="margin-top: 20px; font-size: 0.85em;">© Gravtec AS 2025</p>
     </footer>
+
 </body>
 </html>
