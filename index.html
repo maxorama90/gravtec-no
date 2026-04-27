@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravtec AS - Maskinutleie Haugalandet</title>
-    <meta name="description" content="Utleie av Kobelco SK75SR-7 på Haugalandet. Profesjonell maskinutleie med sertifisert fører.">
+    <meta name="description" content="Utleie av Kobelco SK75SR-7 på Haugalandet. Kraftig og velutstyrt 8-tonner.">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
         header { background: #003366; color: white; padding: 25px 20px; text-align: center; }
-        .logo { max-width: 100%; height: auto; max-height: 120px; margin-bottom: 15px; }
+        .logo { max-width: 100%; height: auto; max-height: 110px; margin-bottom: 15px; }
         h1 { margin: 0; font-size: 1.8em; }
         section { padding: 40px 20px; max-width: 900px; margin: auto; }
-        h2 { color: #003366; margin-top: 0; font-size: 1.6em; }
+        h2 { color: #003366; margin-top: 0; font-size: 1.5em; }
         .maskin { max-width: 100%; height: auto; border-radius: 10px; margin: 25px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         form { background: #f8f9fa; padding: 25px; border-radius: 12px; max-width: 480px; margin: 30px auto; }
         input, textarea { width: 100%; padding: 14px; margin: 8px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1em; }
@@ -22,9 +22,9 @@
         
         @media (max-width: 600px) {
             header { padding: 20px 15px; }
-            .logo { max-height: 90px; }
+            .logo { max-height: 85px; }
             h1 { font-size: 1.5em; }
-            h2 { font-size: 1.4em; }
+            h2 { font-size: 1.35em; }
             section { padding: 30px 15px; }
             .utstyr { columns: 1; }
             form { padding: 20px; }
@@ -33,20 +33,22 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
         <img src="images/gravtec testlogo.png" alt="Gravtec AS logo" class="logo">
         <h1>Maskinutleie på Haugalandet</h1>
     </header>
 
+    <!-- INTRO -->
     <section style="text-align: center;">
         <h2>Utleie av Kobelco SK75SR-7</h2>
         <p style="font-size: 1.15em; max-width: 650px; margin: 15px auto 25px;">
             Kraftig og velutstyrt 8-tonner – 2025-modell.<br>
-            Sertifisert VA-rørlegger som fører. Med eller uten fører.
+            Profesjonell maskinutleie på Haugalandet.
         </p>
-        <img src="images/kobelco-bilde.png" alt="Kobelco SK75SR-7" class="maskin">
     </section>
 
+    <!-- UTSTYR -->
     <section>
         <h2>Utstyr som følger med</h2>
         <div class="utstyr">
@@ -62,9 +64,12 @@
         <p><strong>Pris:</strong> Fra 1500 kr/dag eks. mva. (ta kontakt for tilbud)</p>
     </section>
 
+    <!-- KONTAKTSKJEMA -->
     <section>
         <h2>Kontaktskjema</h2>
-        <p style="text-align: center; max-width: 400px; margin: 0 auto 20px;">Fyll inn for tilbud og ledige datoer. Vi svarer raskt.</p>
+        <p style="text-align: center; max-width: 400px; margin: 0 auto 20px;">
+            Fyll inn for tilbud og ledige datoer. Vi svarer raskt.
+        </p>
         
         <form action="mailto:post@gravtec.no" method="post" enctype="text/plain">
             <input type="text" name="navn" placeholder="Navn / Firma" required>
@@ -75,6 +80,12 @@
         </form>
     </section>
 
+    <!-- MASKINBILDE (etter skjema) -->
+    <section style="text-align: center; padding-top: 10px; padding-bottom: 50px;">
+        <img src="images/kobelco-bilde.png" alt="Kobelco SK75SR-7" class="maskin" style="max-width: 750px;">
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <p><strong>post@gravtec.no</strong> &nbsp;|&nbsp; <strong>952 84 025</strong> &nbsp;|&nbsp; Avaldsnes</p>
         <p style="margin-top: 20px; font-size: 0.85em;">© Gravtec AS 2025</p>
